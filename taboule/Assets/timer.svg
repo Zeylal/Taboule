@@ -1,0 +1,18 @@
+<svg width="166" height="156" viewBox="0 0 166 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="50.63" width="14.11" height="16.6" rx="3" fill="#FFDD93"/>
+<rect y="72.21" width="14.11" height="16.6" rx="3" fill="#FFDD93"/>
+<circle cx="88.395" cy="77.605" r="77.605" fill="#BDA6ED"/>
+<mask id="mask0_342_6328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="21" y="5" width="140" height="145">
+<ellipse cx="90.8851" cy="77.605" rx="69.305" ry="71.795" fill="#F2897D"/>
+</mask>
+<g mask="url(#mask0_342_6328)">
+<rect width="234.89" height="84.9572" transform="matrix(-0.0113971 0.999935 0.999935 0.0113971 88.1599 -36.0731)" fill="#FFDD93"/>
+</g>
+<mask id="mask1_342_6328" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="5" width="138" height="145">
+<ellipse rx="68.475" ry="71.795" transform="matrix(-1 0 0 1 85.0751 77.605)" fill="#9890B9"/>
+</mask>
+<g mask="url(#mask1_342_6328)">
+<rect width="234.89" height="83.9399" transform="matrix(0.0112606 0.999937 -0.999933 0.0115352 87.7676 -36.0731)" fill="#9B87C5"/>
+</g>
+<circle cx="88.395" cy="77.605" r="60.175" fill="#BDA6ED"/>
+</svg>
