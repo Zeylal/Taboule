@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script
+			type="text/javascript"
+			src="https://code.jquery.com/jquery-1.11.0.js"
+		></script>
+
+		<script src="timer.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<p>équipe 1</p>
+		<img class="aide" src="assets/_.svg" alt="">
+		<div class="Lise">
+			<div id="timer"></div>
+			<div class="item html">
+				<svg
+					width="160"
+					height="160"
+					xmlns="https://www.w3.org/2000/svg"
+				>
+					<g>
+						<title>Layer 1</title>
+						<circle
+							id="circle"
+							class="circle_animation"
+							r="63.85699"
+							cy="81"
+							cx="81"
+							stroke-width="10"
+							stroke="#F2897D"
+							fill="none"
+						/>
+					</g>
+				</svg>
+				<script>
+					const formatRemainingTime = (time) => {
+						const minutes = Math.floor((time % 3600) / 60);
+						const seconds = time % 60;
+
+						return `${minutes}:${seconds}`;
+					};
+
+					const renderTime = ({ remainingTime }) => {
+						if (remainingTime === 0) {
+							return <div className="timer">Too lale...</div>;
+						}
+
+						return (
+							<div className="timer">
+								<div className="text">Remaining time</div>
+								<div className="value">
+									{formatRemainingTime(remainingTime)}
+								</div>
+							</div>
+						);
+					};
+
+					function App() {
+						return (
+							<div className="App">
+								<h1>
+									CountdownCircleTimer
+									<br />
+									React Component
+								</h1>
+								<div className="timer-wrapper">
+									<CountdownCircleTimer
+										isPlaying
+										duration={390}
+										colors={[
+											["#004777", 0.33],
+											["#F7B801", 0.33],
+											["#A30000"],
+										]}
+										onComplete={() => [true, 1000]}
+									>
+										{renderTime}
+									</CountdownCircleTimer>
+								</div>
+								<p className="info">
+									Change component properties in the code
+									filed on the right to try difference
+									functionalities
+								</p>
+							</div>
+						);
+					}
+				</script>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var time = 300;
+			var initialOffset = "440";
+			var i = 1;
+			/* Need initial run as interval hasn't yet occured... */
+			$(".circle_animation").css(
+				"stroke-dashoffset",
+				initialOffset - 1 * (initialOffset / time)
+			);
+			var interval = setInterval(function () {
+				$("h2").text(i);
+				if (i == time) {
+					clearInterval(interval);
+					return;
+				}
+				$(".circle_animation").css(
+					"stroke-dashoffset",
+					initialOffset - (i + 1) * (initialOffset / time)
+				);
+				i++;
+			}, 1000);
+
+			const departMinutes = 5;
+			let temps = departMinutes * 60;
+
+			const timerElement = document.getElementById("timer");
+
+			setInterval(() => {
+				let minutes = parseInt(temps / 60, 10);
+				let secondes = parseInt(temps % 60, 10);
+
+				minutes = minutes < 10 ? "0" + minutes : minutes;
+				secondes = secondes < 10 ? "0" + secondes : secondes;
+
+				timerElement.innerText = `${minutes}:${secondes}`;
+				temps = temps <= 0 ? 0 : temps - 1;
+			}, 1000);
+		</script>
+	<img class="taboo" src="assets/carte_taboo.svg" alt="carte_taboo">
+<button class="button">passer</button>
+	</body>
+</html>
