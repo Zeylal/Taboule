@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Righteous&display=swap');
+
+:root {
+	/* Colors */
+
+	--black: #888480;
+	--white: #ffffff;
+
+	--bg: #F7EFE2;
+
+	--violet: #BDA6ED;
+	--vert: #8ECF9E;
+	--jaune: #FFDD93;
+	--rouge: #F2897D;
+
+	/* Size */
+
+	--h1: 48px; 
+	--h2: 40px; 
+	--h3: 36px; 
+	--h4: 24px; 
+	--h5: 20px; 
+}
+h1{
+	font-size: var(--h1);
+	font-family: 'Righteous';
+}
+h2{
+	font-size: var(--h2);
+	font-family: 'Righteous';
+}
+h3{
+	font-size: var(--h3);
+	font-family: 'Righteous';
+}
+h4{
+	font-size: var(--h4);
+	font-family: 'Righteous';
+}
+h5{
+	font-size: var(--h4);
+	font-family: 'poppins';
+	margin: unset;
+}
+h6{
+	font-size: var(--h3);
+	font-family: 'poppins';
+}
+p{
+	font-size: var(--h5);
+	font-family: 'poppins';
+}
+
+body {
+	position: relative;
+	display: flex;
+    width: 414px;
+    height: 896px;
+	margin: unset;
+}
+.margin {
+	margin-left: 31px;
+	margin-right: 31px;
+}
+.margin2 {
+	margin-right: 31px;
+}
+a {
+	text-decoration:none;
+}
+.cross {
+	display: flex;
+	float: right;
+	padding-top: 21px;
+	width: 40px;
+}
+
+/*Acceuil*/
+.wave1 {
+	z-index: -1;
+    top: 187.6px;
+	position: absolute;
+	width: 500;
+}
+.wave2 {
+	z-index: -1;
+	position: absolute;
+	width: 500;
+    top: 494px;
+}
+.home-container {
+	padding-top: 31px;
+	display:flex;
+}
+.profil {
+	position: absolute;
+	left: 293px;
+	width: 91px;
+	height: 91px;
+}
+.text-bienvenue {
+	font-weight: normal;
+display: block;
+padding-top: 2.5em;
+width: 180px;
+}
+.text-bienvenue2 {
+	font-weight: normal;
+	padding-top: 3em;
+	display: block;
+width: 190px;
+}
+ 
+/*Créer une partie*/
+.room-code{
+margin-top: 70px;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 359px;
+height: 55px;
+border: 1px solid var(--black);
+}
+.groupe-grid{
+	display: grid;
+	grid-template-columns: 150px 150px;
+	justify-content: space-between;
+}
+.groupe-rows{
+	display:block;
+	text-align: center;
+}
+.button-angle{
+	margin: auto;
+	text-align: center;
+	background: #F2897D;
+	border-radius: 5px;
+	transform: rotate(-5deg);
+	width: 228px;
+margin-top: 1em;
+}
+
+/*choix-jeu*/
+.animated-progress {
+	width: 382px;
+	height: 70px;
+	border-radius: 5px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.animated-progress span {
+	height: 70px;
+	display: flex;
+	width: 0;
+	color: rgb(255, 251, 251);
+	line-height: 30px;
+	justify-content: end;
+	text-align: center;
+	padding-right: 5px;
+}
+
+.progress-blue span {
+	background-color: #bda6ed;
+}
+.progress-green span {
+	background-color: #8ecf9e;
+}
+.progress-purple span {
+	background-color: #f2897d;
+}
+.progress-red span {
+	background-color: #ffdd93;
+}
+
+/*chois theme*/
+.patat1 {
+	margin-bottom: 45px;
+}
+.patat2 {
+	margin-bottom: 45px;
+}
+.patat3 {
+	margin-bottom: 45px;
+}
+.patat {
+	margin-top: 45px;
+}
+
+
+/*
+.bg-purple {
+	background-color: #cdc2fc;
+}
+
+.bg-beige {
+	background-color: #f7efe2;
+}
+
+
+.carte-makeup {
+	text-align: center;
+	font-size: 1.3rem;
+	border-radius: 20px;
+	padding: 25px;
+	height: 300px;
+}
+
+.carte-button {
+	background-color: white;
+	width: 270px;
+	color: #f2897d;
+	border: 2px solid #f2897d;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.button-red {
+	border: #f2897d;
+	color: white;
+	background-color: #f2897d;
+}
+
+.button-purple {
+	border: #bda6ed;
+	color: white;
+	background-color: #bda6ed;
+}
+
+.button-yellow {
+	border: #ffdd93;
+	color: white;
+	background-color: #ffdd93;
+	color: #f2897d;
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+}
+
+.carte-makeup {
+	display: flex;
+	background-color: #8ecf9e;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	height: 450px;
+	width: 250px;
+}
+
+
+.illustration {
+	position: absolute;
+	width: 90px;
+	z-index: 0;
+}
+
+.razor {
+	left: 200px;
+	top: 350px;
+	transform: rotate(45deg);
+}
+
+.lipstick {
+	right: 210px;
+	top: 50px;
+}
+
+.tampon {
+	left: 240px;
+	top: 70px;
+}
+
+.zone-button {
+	margin-top: 50px;
+}
+
+/*accueil*/
+
+
+
+
+
+
+/*swipe
+
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+.swipe-wrap > div {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+/*règle
+
+.regle {
+	font-family: "Righteous";
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.text-regle {
+	margin-top: 150px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.2rem;
+	color: rgb(92, 92, 92);
+}
+
+.bg-beige {
+	background-color: #f7efe2;
+}
+
+.button-compris {
+	background-color: #bda6ed;
+	color: white;
+	margin-top: 90px;
+	width: 200px;
+	height: 70px;
+	border: none;
+}

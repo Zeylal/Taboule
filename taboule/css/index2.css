@@ -1,0 +1,94 @@
+.aide {
+	margin-top: 20px;
+	margin-left: 300px;
+	width: 40px;
+	/* margin-bottom: 20px; */
+}
+
+.question {
+	background-color: white;
+	width: 270px;
+	text-align: center;
+	font-size: 1.3rem;
+
+	color: #f2897d;
+	padding: 25px;
+	border: 2px solid #f2897d;
+	border-radius: 20px;
+}
+
+progress {
+	writing-mode: horizontal-tb !important;
+	color: #f2897d;
+	appearance: auto;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 6em;
+	width: 10em;
+	vertical-align: -0.2em;
+	text-decoration-color: white;
+}
+
+.progression {
+	background-color: #8ecf9e;
+}
+*/ progress {
+	accent-color: #f2897d;
+}
+
+.progress-container {
+	background-color: white;
+	width: 270px;
+	text-align: center;
+	font-size: 1.3rem;
+
+	color: #f2897d;
+	padding: 25px;
+	border: 2px solid #f2897d;
+	border-radius: 20px;
+
+	margin-top: 2rem;
+	position: relative;
+	border: none;
+	display: inline-block;
+	background: #f2897d;
+	height: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.progress-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 75%;
+	background: #8ecf9e;
+}
+
+.info {
+	display: flex;
+	text-align: center;
+}
+.grid {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	line-height: 20px;
+	display: grid;
+	grid-template-columns: 175px 175px;
+	font-size: 15px;
+	color: white;
+}
+
+button {
+	border: #f2897d;
+	font-family: "Poppins", sans-serif;
+	border-radius: 5px;
+	width: 150px;
+	height: 70px;
+	color: white;
+	background-color: #f2897d;
+	font-size: 1.3rem;
+	transform: rotate(10deg);
+}
