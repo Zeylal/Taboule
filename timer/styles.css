@@ -1,0 +1,84 @@
+body {
+	background-color:#F7EFE2;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+#timer {
+	font-weight: bold;
+	font-size: 1.5em;
+	position: absolute;
+	top: 2.6em;
+	left: 2em;
+	color: rgb(255, 255, 255);
+}
+
+.Lise {
+	width: 10em;
+	position: relative;
+	height: 10em;
+	background-color: #BDA6ED;
+	border-radius: 10000px;
+
+}
+.g {
+	width: 30em;
+}
+.item html {
+	position: absolute;
+}
+#circle {
+	width: 20em;
+}
+/*svg {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}*/
+.circle_animation {
+	width: 30em;
+	stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+	stroke-dashoffset: 440;
+	transition: all 1s linear;
+}
+button {
+    border: #F2897D;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    width: 150px;
+    height: 70px;
+    color: white;
+    background-color: #F2897D;
+    font-size: 1.3rem;
+    transform: rotate(10deg);
+	margin-top:48px;
+}
+
+.violet{
+	border:#BDA6ED;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    width: 150px;
+    height: 70px;
+    color: white;
+    background-color: #BDA6ED;
+    font-size: 1.3rem;
+    transform: rotate(-10deg);
+	margin-top:48px;
+}
+.aide{
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 40px;
+   /* margin-bottom: 20px; */
+}
+p{
+color: #9890B9;
+font-size: 24px;
+font-style: medium;
+}
