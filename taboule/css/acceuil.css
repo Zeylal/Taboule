@@ -1,0 +1,16 @@
+
+body{
+    background-color: #BDA6ED;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.acceuil{
+    max-width: 280px;
+    margin-top: 4rem;
+}
+
+
+
